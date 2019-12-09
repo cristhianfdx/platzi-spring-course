@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-reservation</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div align="center">
+        <h3>E-reservation</h3>
+        <p th:if="${param.error}" th:text="${errorMsg}" class="error"></p>
+        <form th:action="@{/app/login}" method="post">
+            <fieldset>
+                <label class="etiqueta">Usuario: </label>
+                <input type="text" name="username">
+                <label class="etiqueta">Clave: </label>
+                <input type="password" name="password">
+                <input type="submit" value="Send">
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>
