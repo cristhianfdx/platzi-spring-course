@@ -92,9 +92,9 @@
 							<name>cristhiandgz89/${project.build.finalName}</name>
 							<build>
 								<from>openjdk:latest</from>
-								<entryPoint>java -Dspring.profiles.active=prod -jar /home/cristhiandgz/Desktop/${project.build.finalName}</entryPoint>
+								<entryPoint>java -Dspring.profiles.active=prod -jar /home/cdgz/Escritorio/Desktop/${project.build.finalName}</entryPoint>
 								<assembly>
-									<basedir>/home/cristhiandgz/Desktop/</basedir>
+									<basedir>/home/cdgz/Escritorio/</basedir>
 									<descriptorRef>artifact</descriptorRef>
 									<inline>
 										<id>assembly</id>
